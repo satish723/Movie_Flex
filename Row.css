@@ -1,0 +1,23 @@
+.rowItems
+{
+    overflow: hidden;
+    display: flex;
+    gap:20px; 
+    padding-bottom: 20px;
+    overflow-x: scroll;
+    overflow-y: none; 
+    transition: transform 450ms;
+} 
+.rowItems::-webkit-scrollbar
+{
+    display:none;
+}
+.item
+{
+    border-radius: 5%;
+    max-width: 100px;
+    min-height: 160px;
+}
+.item:hover{
+    transform:scale(1.08);
+}
