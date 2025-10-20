@@ -1,7 +1,7 @@
 import React,{useEffect,useState}from 'react'
 import instance from "./axios"
 import "./Row.css";
-function Row({title,fetchUrl}) {
+function Row({title,fetchUrl,isLarge}) {
     const [movies,setMovies]=useState([]);
     useEffect(()=>
         {
@@ -16,9 +16,10 @@ function Row({title,fetchUrl}) {
   return (
     <div className="Container">
         <h2>{title}</h2>
-        <div class="rowItems">
+        <div className="rowItems">
+            {/* {console.log(title)} */}
             {movies.map((movie)=>
-            <img className="item" key={movie.id} src={`${baseURL}${movie.poster_path}`} alt={movie.title}
+            <img className={`item ${isLarge && "isLarge"}`} key={movie.id} src={`${baseURL}${movie.poster_path}`} alt={movie.title}
             />)}
         </div>
     </div>

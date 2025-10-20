@@ -6,7 +6,7 @@ export default function App ()
 {
     return(
         <div className="container">
-        <Row title="Originals" fetchUrl={requests.originals} />
+        <Row title="Originals" fetchUrl={requests.originals} isLarge={true} />
         <Row title="Trending Now" fetchUrl={requests.trendingDay} />
         <Row title="Trending Week" fetchUrl={requests.trendingWeek} />
         <Row title="Action" fetchUrl={requests.action} />

@@ -1,9 +1,13 @@
+.Container 
+{
+    transition: transform 430s ease;
+}
 .rowItems
 {
     overflow: hidden;
     display: flex;
     gap:20px; 
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     overflow-x: scroll;
     overflow-y: none; 
     transition: transform 450ms;
@@ -14,10 +18,19 @@
 }
 .item
 {
-    border-radius: 5%;
-    max-width: 100px;
-    min-height: 160px;
+    border-radius: 5px;
+    max-width: 110px;
+    min-height: 180px; 
 }
 .item:hover{
     transform:scale(1.08);
+    transition: transform 450ms ;
+}
+.isLarge 
+{
+    height:500px;
+    min-width: 400px;
+}
+.isLarge:hover{
+    transition: scale(1.09) transform 450ms;
 }
