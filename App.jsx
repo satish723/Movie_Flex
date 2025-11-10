@@ -1,13 +1,13 @@
 import React from "react";
 import requests from "./request";
 import Row from "./Row"
-
+import Banner from "./Banner";
 export default function App ()
 {
     return(
         <div className="container">
-        <Row title="Originals" fetchUrl={requests.originals} isLarge={true} />
-        <Row title="Trending Now" fetchUrl={requests.trendingDay} />
+        <Banner/>
+        <Row title="Trending Now" fetchUrl={requests.trendingDay} isLarge={true}  />
         <Row title="Trending Week" fetchUrl={requests.trendingWeek} />
         <Row title="Action" fetchUrl={requests.action} />
         <Row title="Comedy" fetchUrl={requests.comedy}/>

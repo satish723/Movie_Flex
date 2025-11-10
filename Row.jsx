@@ -19,7 +19,7 @@ function Row({title,fetchUrl,isLarge}) {
         <div className="rowItems">
             {/* {console.log(title)} */}
             {movies.map((movie)=>
-            <img className={`item ${isLarge && "isLarge"}`} key={movie.id} src={`${baseURL}${movie.poster_path}`} alt={movie.title}
+            <img className={['item', isLarge && 'isLarge'].filter(Boolean).join(' ')} key={movie.id} src={`${baseURL}${movie.poster_path}`} alt={movie.title}
             />)}
         </div>
     </div>

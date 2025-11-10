@@ -19,7 +19,7 @@
 .item
 {
     border-radius: 5px;
-    max-width: 110px;
+    max-width: 150px;
     min-height: 180px; 
 }
 .item:hover{
@@ -28,9 +28,12 @@
 }
 .isLarge 
 {
-    height:500px;
-    min-width: 400px;
+    height:220px;
+    min-width: 300px;
 }
-.isLarge:hover{
-    transition: scale(1.09) transform 450ms;
+.isLarge:hover {
+    transform: scale(1.09);
+    transition: transform 450ms;
 }
+
+
