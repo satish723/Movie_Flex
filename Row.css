@@ -1,7 +1,9 @@
-.Container 
+.Container
 {
-    transition: transform 430s ease;
+ transition: transform 430ms ease;
+ padding-left:8px;
 }
+
 .rowItems
 {
     overflow: hidden;
@@ -28,8 +30,8 @@
 }
 .isLarge 
 {
-    height:220px;
-    min-width: 300px;
+    height:260px;
+    min-width: 200px;
 }
 .isLarge:hover {
     transform: scale(1.09);

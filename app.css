@@ -1,0 +1,7 @@
+.container 
+{
+    margin:0 -8px;
+    background-color: #111;
+    color:white;
+    transition: transform 430ms ease;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import requests from './request';
-import Row from "./Row";
-import instance from "./axios"
+import instance from "./axios";
+import './Banner.css';
 function Banner() {
   const [movie,setMovies]=React.useState([]);
   React.useEffect(()=>
@@ -13,12 +13,19 @@ function Banner() {
       return res;
     }
     fetchData();
-  },[])
-  
+  },[]);
   return (
     
-    <header className="banner"  >
-
+    <header className="banner" style={{
+      backgroundImage:`url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")` ,
+    }}  >
+      {console.log(`url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`)}
+      <div className="banner-contents">
+      <h1 className='banner-title'>{movie.title}</h1> 
+      <div className="buttons"><button className='banner-btn'>play</button><button className='banner-btn'>next</button></div>
+      <p className="banner-descriptions">{movie.overview}</p> 
+      <div class="banner-fade"></div>
+      </div>
     </header>
   )
 }

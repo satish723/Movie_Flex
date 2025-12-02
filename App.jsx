@@ -1,6 +1,7 @@
 import React from "react";
 import requests from "./request";
 import Row from "./Row"
+import './app.css';
 import Banner from "./Banner";
 export default function App ()
 {
