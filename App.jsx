@@ -3,11 +3,14 @@ import requests from "./request";
 import Row from "./Row"
 import './app.css';
 import Banner from "./Banner";
+import Navbar  from "./Navbar";
 export default function App ()
 {
     return(
         <div className="container">
+        <Navbar />
         <Banner/>
+        
         <Row title="Trending Now" fetchUrl={requests.trendingDay} isLarge={true}  />
         <Row title="Trending Week" fetchUrl={requests.trendingWeek} />
         <Row title="Action" fetchUrl={requests.action} />
