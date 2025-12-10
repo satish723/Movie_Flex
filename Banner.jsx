@@ -19,12 +19,12 @@ function Banner() {
     <header className="banner" style={{
       backgroundImage:`url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")` ,
     }}  >
-      {console.log(`url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`)}
+      
       <div className="banner-contents">
       <h1 className='banner-title'>{movie.title}</h1> 
       <div className="buttons"><button className='banner-btn'>play</button><button className='banner-btn'>next</button></div>
       <p className="banner-descriptions">{movie.overview}</p> 
-      <div class="banner-fade"></div>
+      <div className="banner-fade"></div>
       </div>
     </header>
   )

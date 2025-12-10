@@ -28,6 +28,7 @@ width:100%;
 }
 .item:hover{
     transform:scale(1.08);
+    flex:2;
     transition: transform 450ms ease ;
 }
 .isLarge 
@@ -41,3 +42,10 @@ width:100%;
 }
 
 
+.clip
+{
+    position: absolute;
+
+    border-radius: 20px;
+    flex:3;
+}
