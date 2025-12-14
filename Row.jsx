@@ -37,7 +37,7 @@ function Row({title,fetchUrl,isLarge}) {
                     // navigate(`/movie/${results}`);
                 
                 } else {
-                    console.log("No video found for this movie.");
+                    // console.log("No video found for this movie.");
                     settrailkey(null);
                 }
 
